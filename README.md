@@ -1,131 +1,121 @@
-# 👋 Hassen Mohamed Hassen
-**Computer Science (Artificial Intelligence) Student | Junior .NET Developer**
+# Hassen Mohamed Hassen
 
-📍 Egypt  
-🎓 Faculty of Computers & Information – AI Department  
+**Generative AI Engineer · RAG Systems · LLM Engineering · Arabic NLP**
 
----
-
-## 🧠 About Me
-Computer Science (AI) student with a **strong foundation in Machine Learning, mathematics, and AI fundamentals**, combined with growing hands-on experience in **C# and .NET application development**.
-
-I focus on building **clean, well-structured, and practical projects**, whether they are data-driven AI solutions or software systems using solid engineering principles.  
-Currently expanding my skills in **.NET backend development**, while maintaining a solid understanding of AI concepts to build intelligent, real-world systems in the future.
-
-I value **clarity, correctness, and continuous improvement** over rushing into advanced topics without strong fundamentals.
+Minya, Egypt &nbsp;|&nbsp; [hassen.Mohamed3338@compit.aun.edu.eg](mailto:Hassen.Mohamed3338@compit.aun.edu.eg) &nbsp;|&nbsp; [LinkedIn](https://linkedin.com/in/hassen-mohamed-91539835b)
 
 ---
 
-## 💡 Core Strengths
-- Strong mathematical background for AI & ML
-- Machine Learning fundamentals & model evaluation
-- Object-Oriented Programming (OOP)
-- Problem solving & algorithmic thinking
-- Clean code & structured project design
+AI engineer focused on building end-to-end retrieval-augmented generation (RAG) systems, LLM orchestration pipelines, and AI-integrated backends. Work spans embedding generation, hybrid retrieval, cross-encoder reranking, Arabic NLP engineering, and FastAPI microservice design. Approach is experimentation-driven — building, benchmarking, and optimizing rather than assembling off-the-shelf components.
 
 ---
 
-## 🛠 Technical Skills
+## Engineering Focus
 
-### Programming Languages
-- Python
-- C#
-- C++
-- SQL
-
-### AI / Data Science
-- NumPy
-- Pandas
-- Scikit-learn
-- Matplotlib
-- Classical Machine Learning
-- Neural Networks (fundamentals)
-- Hyperdimensional Computing (HDC)
-
-### Software Development
-- .NET (C#)
-- OOP & basic SOLID principles
-- Console & basic system applications
-- Database fundamentals & relational modeling
-
-### Tools & Environment
-- Git & GitHub
-- Jupyter Notebook
-- VS Code
-- Linux
+- **RAG Pipeline Architecture** — hybrid retrieval, fusion scoring, reranking, context assembly
+- **Vector & Sparse Retrieval** — FAISS, BM25, dense-sparse fusion, retrieval evaluation
+- **Arabic NLP Engineering** — morphological preprocessing, tokenization normalization, legal domain adaptation
+- **LLM Orchestration** — LangChain, Ollama, prompt engineering, hallucination reduction
+- **AI Backend Integration** — FastAPI AI microservices, REST API design, retrieval/generation decoupling
 
 ---
 
-## 🚀 Projects
+## Technical Stack
 
-### 🤖 AI & Data Projects
-
-#### 🧠 Breast Cancer Classification
-*Machine Learning Project*
-- Built and evaluated ML models for medical diagnosis
-- Applied data preprocessing, normalization, and performance metrics
-- Focused on reliability, interpretability, and clean ML pipelines
-
-#### 🧬 Hyperdimensional Computing (HDC) Project
-- Implemented and experimented with HDC concepts
-- Explored alternative computing paradigms beyond traditional ML
-- Focused on understanding theory and practical behavior
+| Category | Technologies |
+|---|---|
+| **Languages** | Python, SQL, C++, C#, Java |
+| **Generative AI & LLMs** | LangChain, Ollama, Qwen 2.5, Prompt Engineering, RAG Pipelines |
+| **NLP & Retrieval** | Sentence Transformers, Cross-Encoders, FAISS, BM25, Hybrid Search, Retrieval Fusion, Reranking |
+| **AI/ML Frameworks** | Hugging Face Transformers, PyTorch, TensorFlow, Scikit-learn |
+| **Backend & APIs** | FastAPI, ASP.NET MVC, REST APIs, JWT Auth, RBAC |
+| **Data Engineering** | Pandas, NumPy, Text Preprocessing, Dataset Cleaning |
+| **Tools & Platforms** | Git, Streamlit, SQLite |
 
 ---
 
-### 🧩 Software Engineering Projects
+## Flagship Project
 
-#### 📚 Library Management System
-*C# / .NET*
-- Designed and implemented a modular library system
-- Applied OOP principles and clean code practices
-- Structured for future extensions (database, APIs, UI)
+### [Egyptian Legal AI System — Arabic Labor Law QA Engine](https://github.com/hassenmohamed-mezr/Egyptian_legal_ai_agent)
 
-#### 🔥 Fire Evacuation Simulator
-*Python – Algorithmic Simulation*
-- Implemented A* pathfinding algorithm
-- Simulated dynamic fire spread with real-time path updates
-- Emphasis on logic clarity and algorithm efficiency
+> End-to-end RAG system for Arabic legal question answering over Egyptian labor law. Every layer is custom-designed — from document ingestion through retrieval fusion, reranking, and LLM response generation.
 
-#### 🚗 Car Rental Management System
-*C++ | Object-Oriented Design*
-- Designed a modular system using OOP principles
-- Implemented core business logic
-- Planned extensions: database integration & intelligent recommendations
+**Architecture highlights:**
 
----
+- Hybrid retrieval combining dense vector search (FAISS + Sentence Transformers) with sparse keyword retrieval (BM25), fused via a weighted scoring mechanism to maximize recall and precision across retrieval modalities
+- Domain-specific chunking strategy for Arabic legal documents — handles clause boundaries, article hierarchies, and formal Arabic morphological ambiguities that break standard tokenization
+- Cross-encoder reranking as a second-stage refinement layer, improving candidate relevance before context passes to the LLM
+- Full query pipeline: natural language input → embedding generation → parallel BM25 + FAISS retrieval → weighted fusion → cross-encoder reranking → context assembly → Qwen 2.5 via Ollama
+- Addressed Arabic NLP challenges: morphological ambiguity, dialectal variation, inconsistent tokenization, noisy legal dataset preprocessing
+- Query expansion and dynamic chunk selection to improve LLM grounding accuracy on ambiguous legal queries
+- Exposed as a FastAPI service with structured endpoints, decoupling retrieval and generation from any frontend or integration layer
+- Iterative benchmarking over embedding model selection, chunk sizes, retrieval weights, and reranker thresholds against manual evaluation benchmarks
 
-## 📚 Academic Focus
-- Artificial Intelligence
-- Machine Learning
-- Probability & Statistics
-- Data Structures & Algorithms
-- Databases
-- Neural Networks (basics)
+`Python` `FAISS` `BM25` `Sentence Transformers` `Cross-Encoders` `LangChain` `FastAPI` `Qwen 2.5` `Ollama` `Arabic NLP`
 
 ---
 
-## 🎯 Current Goals
-- Strengthen skills in **.NET & backend development**
-- Build real-world software systems with solid architecture
-- Apply AI concepts in practical, production-oriented projects
-- Gradually advance into **Deep Learning** after mastering fundamentals
-- Develop high-quality, well-documented projects
+## Selected Projects
+
+### [Hospital Management System with Integrated AI Assistant](https://github.com/hassenmohamed-mezr/HospitalInformationSystem)
+
+Full-stack hospital management platform with a FastAPI-based RAG microservice integrated via REST API — demonstrating multi-service AI/backend architecture in a real operational context.
+
+- Standalone AI microservice decoupled from the main backend, integrated cleanly via REST
+- ASP.NET MVC backend with layered controller-service architecture handling multi-role workflows
+- JWT authentication and RBAC securing patient records and operations across user roles
+- RAG assistant retrieves contextually relevant medical records and operational data, reducing staff query overhead
+
+`C#` `ASP.NET MVC` `FastAPI` `Python` `SQLite` `RAG` `REST API`
 
 ---
 
-## 📌 GitHub Activity
-- Emphasis on **clean code and clear structure**
-- Learning-focused commits with clear intent
-- Continuous refactoring and improvement
-- Projects reflect growth, not just final results
+### [Breast Cancer Image Classification](https://github.com/hassenmohamed-mezr/Breast-Cancer-Image-Classification)
+
+Multi-model benchmarking pipeline for medical image classification, comparing classical ML approaches against CNN architectures with full custom training infrastructure.
+
+- Built a preprocessing pipeline from scratch — augmentation, normalization, noise reduction — without high-level wrappers
+- Custom training loop with manual backpropagation control and optimizer tuning
+- Achieved ~85% accuracy with classical baselines; improved generalization through CNN experimentation
+
+`Python` `TensorFlow` `Scikit-learn` `NumPy` `Medical Imaging`
 
 ---
 
-## 📫 Contact
-- GitHub: **@hassenmohamed-mezr**
-- LinkedIn: *Available upon request*
+### [Linear Programming Solver](https://github.com/hassenmohamed-mezr/Linear-Programming-Solver)
+
+Constraint-based LP solver implementing optimization algorithms for multi-variable mathematical problems. Focused on algorithmic correctness, numerical stability, and clean computational design.
+
+`Python` `Mathematical Optimization` `Algorithmic Engineering`
 
 ---
 
-> *“Consistency beats talent when talent doesn’t work consistently.”*
+### [Virtual File System Emulator](https://github.com/hassenmohamed-mezr/Virtual-File-System-Emulator)
+
+Low-level file system simulation covering file allocation, directory management, and storage modeling. Built to develop systems-level thinking beyond typical application development.
+
+`C` `Operating Systems` `File Allocation` `Memory Simulation`
+
+---
+
+## Current Technical Interests
+
+- Retrieval evaluation methodologies and benchmarking pipelines for RAG systems
+- Advanced Arabic NLP preprocessing and domain adaptation for legal and formal text
+- Multi-stage reranking architectures and retrieval quality optimization
+- Agentic LLM workflows and tool-augmented reasoning systems
+- AI backend design patterns — retrieval/generation decoupling, microservice integration
+
+---
+
+## Engineering Philosophy
+
+Build systems that can be evaluated, not just demonstrated. Retrieval quality, grounding accuracy, and latency behavior matter more than getting an LLM to respond. Every architectural decision should be driven by what breaks at scale or under adversarial inputs — not what works in the tutorial.
+
+---
+
+## Contact
+
+- **Email:** [Hassen.Mohamed3338@compit.aun.edu.eg](mailto:Hassen.Mohamed3338@compit.aun.edu.eg)
+- **LinkedIn:** [linkedin.com/in/hassen-mohamed-91539835b](https://linkedin.com/in/hassen-mohamed-91539835b)
+- **GitHub:** [github.com/hassenmohamed-mezr](https://github.com/hassenmohamed-mezr)
